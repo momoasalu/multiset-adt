@@ -1,8 +1,8 @@
 public interface MultiSet {
-    boolean add();
-    void remove();
-    boolean contains();
+    boolean add(Object item);
+    void remove(Object item);
+    boolean contains(Object item);
     boolean isEmpty();
-    int count();
+    int count(Object item);
     int size();
 }
