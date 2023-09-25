@@ -1,4 +1,13 @@
 public class LinkedListMultiSet implements MultiSet{
+    private class Node {
+        public Object item;
+        public Node next;
+
+        public Node(Object item) {
+            this.item = item;
+            this.next = null;
+        }
+    }
     public boolean add(Object item) {
         return false;
     }
